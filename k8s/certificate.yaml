@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+
+kind: Certificate
+metadata:
+  name: arendaphone-email-tls
+spec:
+  secretName: arendaphone-email
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: arendaphone.email
+  dnsNames:
+    - arendaphone.email
+    - www.arendaphone.email
