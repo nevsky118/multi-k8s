@@ -13,7 +13,7 @@ spec:
     - hosts:
         - arendaphone.email
         - www.arendaphone.email
-      secretName: arendaphone-email-tls
+      secretName: arendaphone-email
   rules:
     - host: arendaphone.email
       http:
